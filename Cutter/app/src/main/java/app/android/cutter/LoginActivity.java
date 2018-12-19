@@ -23,7 +23,8 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_firebase_ui);
+        createSignInIntent();
 
     }
 
@@ -32,16 +33,17 @@ public class LoginActivity extends AppCompatActivity {
         // Choose authentication providers
         List<AuthUI.IdpConfig> providers = Arrays.asList(
                 new AuthUI.IdpConfig.EmailBuilder().build(),
-                new AuthUI.IdpConfig.PhoneBuilder().build(),
-                new AuthUI.IdpConfig.GoogleBuilder().build(),
-                new AuthUI.IdpConfig.FacebookBuilder().build(),
-                new AuthUI.IdpConfig.TwitterBuilder().build());
+                new AuthUI.IdpConfig.PhoneBuilder().build() );
+                //   new AuthUI.IdpConfig.GoogleBuilder().build(),
+                // new AuthUI.IdpConfig.FacebookBuilder().build(),
+                //new AuthUI.IdpConfig.TwitterBuilder().build());
 
         // Create and launch sign-in intent
         startActivityForResult(
                 AuthUI.getInstance()
                         .createSignInIntentBuilder()
                         .setAvailableProviders(providers)
+                        .setLogo(R.mipmap.cutter_logo_round)
                         .build(),
                 RC_SIGN_IN);
         // [END auth_fui_create_intent]

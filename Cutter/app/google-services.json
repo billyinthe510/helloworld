@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1028775736318",
+    "firebase_url": "https://cutter-e334c.firebaseio.com",
+    "project_id": "cutter-e334c",
+    "storage_bucket": "cutter-e334c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028775736318:android:f0c5f42cb780d72f",
+        "android_client_info": {
+          "package_name": "app.android.cutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028775736318-gqhvabltuicc2pnhu64umj5mj7p0bd9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkkTpj1xO-ZPunj7eIWjZQTmrrZi3JMcs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
